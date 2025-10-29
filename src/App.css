@@ -1,0 +1,14 @@
+/* ===== THREE CARD ALIGN AND RESPONSIVE ===== */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  border-radius: .5rem;
+  overflow: hidden;
+  width: min(1000px, 65vw);
+  margin-inline: auto;
+  transition: all .3s ease;
+}
+
+@media (max-width: 900px){
+  .cards { grid-template-columns: 1fr; }
+}

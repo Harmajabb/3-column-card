@@ -1,0 +1,53 @@
+/* ===== EACH CARD ===== */
+
+/* color themes */
+.card--sedans  { background: var(--gold-500); }
+.card--suvs    { background: var(--cyan-800); }
+.card--luxury  { background: var(--green-950); }
+
+/* text btn color */
+.card--sedans  .btn { color: var(--gold-500); }
+.card--suvs    .btn { color: var(--cyan-800); }
+.card--luxury  .btn { color: var(--green-950); }
+
+
+/* card only */
+.card{
+  color:var(--gray-100);
+  padding: 3rem;
+  display:grid;
+  gap: 1.25rem;
+}
+
+.card_title{
+  font-family: "Big Shoulders", Arial, sans-serif;
+  color: var(--gray-100);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 1.2rem + 1.2vw, 2.2rem);
+  letter-spacing: 1px;
+  margin: .25rem 0 0;
+}
+.card_text{
+  color: var(--white-75);
+  line-height: 1.6;
+  max-width: 36ch;
+}
+
+/* buttons */
+.btn{
+  justify-self: start;
+  font-weight: 700;
+  border-radius: 50px;
+  margin: 1rem;
+  padding: .7rem 1.8rem;
+  border: none;
+  background: var(--gray-100);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus-visible{
+  outline: 2px solid var(--gray-100);
+  background: transparent;
+  color: var(--gray-100);
+}
