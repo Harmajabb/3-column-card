@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(() => ({
   plugins: [react()],
-  base: '/3-column-card/',
-})
+  // Sur Vercel on sert à la racine → base = "/"
+  // En local pour GitHub Pages tu peux garder le sous-chemin.
+  base: process.env.VERCEL ? "/" : "/3-column-card/",
+}));
