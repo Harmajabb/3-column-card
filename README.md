@@ -33,7 +33,7 @@ Users should be able to:
 ## Links
 
 - **Solution URL:** [Click here](https://github.com/Harmajabb/3-column-card.git)
-- **Live Site URL:** [Click here](https://harmajabb.github.io/3-column-card/)
+- **Live Site URL:** [Click here](https://3-column-card-pink.vercel.app/)
 
 ---
 
